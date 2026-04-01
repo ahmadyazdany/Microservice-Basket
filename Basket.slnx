@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/.template.config/">
+    <File Path="template.json" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/ApplicationService/ApplicationService.csproj" />
+    <Project Path="src/Domain/Domain.csproj" />
+    <Project Path="src/DomainService/DomainService.csproj" />
+    <Project Path="src/Infrastructure/Infrastructure.csproj" />
+    <Project Path="src/WebApi/WebApi.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/UnitTests/UnitTests.csproj" />
+  </Folder>
+</Solution>

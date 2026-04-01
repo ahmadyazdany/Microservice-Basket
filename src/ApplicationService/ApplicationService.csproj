@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.3" />
+		<PackageReference Include="Components.Framework" Version="1.0.2" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\DomainService\DomainService.csproj" />
+  </ItemGroup>
+
+</Project>
