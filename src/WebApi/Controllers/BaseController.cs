@@ -8,8 +8,4 @@ namespace WebApi.Controllers;
 [ApiResultFilter]
 public class BaseController : Controller
 {
-    public IActionResult Index()
-    {
-        return View();
-    }
 }

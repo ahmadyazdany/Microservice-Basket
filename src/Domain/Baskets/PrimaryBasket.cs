@@ -6,6 +6,14 @@ namespace Domain.Baskets;
 
 public sealed class PrimaryBasket : BaseBasket
 {
+    private PrimaryBasket() { }
+
+    public static PrimaryBasket Create(Guid userId)
+    {
+        return new PrimaryBasket { UserId = userId };
+    }
+
+
     public void AddItem(Guid catalogItemId, string slug, string name, decimal price)
     {
         var item = Items.FirstOrDefault(d => d.CatalogItemId == catalogItemId);

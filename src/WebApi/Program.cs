@@ -13,6 +13,7 @@ string? connectionString = builder.Configuration.GetConnectionString("SqlServer"
 
 builder.Services.RegisterDbContext(connectionString);
 builder.Services.RegisterRepositories();
+builder.Services.RegisterServices();
 builder.Services.RegisterHandlers();
 
 var app = builder.Build();

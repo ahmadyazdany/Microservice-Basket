@@ -5,7 +5,7 @@ namespace Domain.Baskets;
 
 public abstract class BaseBasket : BaseEntity<Guid>
 {
-    public Guid UserId { get; private set; }
+    public Guid UserId { get; protected set; }
 
     public ICollection<BasketItem> Items { get; private set; } = [];
 
