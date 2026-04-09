@@ -20,7 +20,7 @@ public sealed class BasketConfiguration : IEntityTypeConfiguration<BaseBasket>
 
         builder.OwnsMany(b => b.Items,b => {
 
-            b.ToTable(Tables.CatalogItems, Schemas.Basket)
+            b.ToTable(Tables.BasketItems, Schemas.Basket)
              .HasKey(a => a.Id);
             
             b.Property(a => a.Quantity).IsRequired();

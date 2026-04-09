@@ -2,7 +2,7 @@
 
 namespace Domain.Baskets;
 
-public sealed class CatalogItem : BaseEntity<Guid>
+public sealed class BasketItem : BaseEntity<Guid>
 {
     /// <summary>
     /// True Id of Catalog Item Entity in Catalog Module
@@ -24,9 +24,9 @@ public sealed class CatalogItem : BaseEntity<Guid>
     public bool PriceChanged => LatestPrice.HasValue &&
                                 LatestPrice.Value != Price;
 
-    public static CatalogItem New(Guid catalogItemId, string slug, string name, decimal price)
+    public static BasketItem New(Guid catalogItemId, string slug, string name, decimal price)
     {
-        return new CatalogItem()
+        return new BasketItem()
         {
             CatalogItemId = catalogItemId,
             Slug = slug,

@@ -11,13 +11,13 @@ public sealed class PrimaryBasket : BaseBasket
         var item = Items.FirstOrDefault(d => d.CatalogItemId == catalogItemId);
 
         if (item is null)
-            Items.Add(CatalogItem.New(catalogItemId,slug,name,price));
+            Items.Add(BasketItem.New(catalogItemId,slug,name,price));
         else
             item.IncreaseQuantity();
     }
 
-    public override void AddItem(CatalogItem catalogItem)
+    public override void AddItem(BasketItem basketItem)
     {
-        AddItem(catalogItem.CatalogItemId, catalogItem.Slug, catalogItem.Name, catalogItem.Price);
+        AddItem(basketItem.CatalogItemId, basketItem.Slug, basketItem.Name, basketItem.Price);
     }
 }

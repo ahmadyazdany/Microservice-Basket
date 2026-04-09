@@ -7,10 +7,10 @@ public abstract class BaseBasket : BaseEntity<Guid>
 {
     public Guid UserId { get; private set; }
 
-    public ICollection<CatalogItem> Items { get; private set; } = [];
+    public ICollection<BasketItem> Items { get; private set; } = [];
 
 
-    public abstract void AddItem(CatalogItem catalogItem);
+    public abstract void AddItem(BasketItem catalogItem);
 
     internal void CleanUp()
     {

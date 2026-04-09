@@ -2,8 +2,9 @@
 
 public static class Tables
 {
+    // Basket
     public const string Baskets = "Baskets";
-    public const string CatalogItems = "CatalogItems";
+    public const string BasketItems = "Items";
 }
 
 public static class Schemas

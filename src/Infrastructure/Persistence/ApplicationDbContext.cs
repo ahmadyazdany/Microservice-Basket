@@ -12,8 +12,7 @@ public sealed class ApplicationDbContext : DbContext
     public DbSet<BaseBasket> Baskets { get; set; }
     public DbSet<PrimaryBasket> PrimaryBaskets { get; set; }
     public DbSet<SecondaryBasket> SecondaryBaskets { get; set; }
-
-    public DbSet<CatalogItem> CatalogItems { get; set; }
+    public DbSet<BasketItem> BasketItems { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
